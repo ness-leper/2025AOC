@@ -15,8 +15,6 @@ func main() {
 	// This parses the flags from the command line
 	flag.Parse()
 
-	fmt.Println(*dayPtr, *partPtr, *filePtr)
-
 	switch *dayPtr {
 	case "1":
 		switch *partPtr {
