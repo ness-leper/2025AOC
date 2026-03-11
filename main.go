@@ -2,7 +2,6 @@ package main
 
 import (
 	"flag"
-	"fmt"
 
 	"github.com/ness-leper/2025AOC/day1"
 )
@@ -21,7 +20,7 @@ func main() {
 		case "1":
 			day1.Part1(filePtr)
 		case "2":
-			fmt.Println("Not implemented yet")
+			day1.Part2(filePtr)
 		}
 	}
 }
