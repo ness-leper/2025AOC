@@ -4,6 +4,7 @@ import (
 	"flag"
 
 	"github.com/ness-leper/2025AOC/day1"
+	"github.com/ness-leper/2025AOC/day2"
 )
 
 func main() {
@@ -21,6 +22,11 @@ func main() {
 			day1.Part1(filePtr)
 		case "2":
 			day1.Part2(filePtr)
+		}
+	case "2":
+		switch *partPtr {
+		case "1":
+			day2.Part1(filePtr)
 		}
 	}
 }
