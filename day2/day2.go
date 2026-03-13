@@ -9,8 +9,8 @@ import (
 )
 
 func Part1(filename *string) {
-	fmt.Println("Day 2")
-	file := strings.SplitSeq(string(readfile.ReadFile(filename)), ",")
+	fmt.Println("Day 2 Part 1")
+	file := strings.SplitSeq(strings.Split(string(readfile.ReadFile(filename)), "\n")[0], ",")
 	total := 0
 
 	for id := range file {
@@ -18,6 +18,7 @@ func Part1(filename *string) {
 		start, _ := strconv.Atoi(parts[0])
 		end, _ := strconv.Atoi(parts[1])
 		matches := 0
+
 		for v := start; v <= end; v++ {
 			s := strconv.Itoa(v)
 			length := len(s)
@@ -37,7 +38,6 @@ func Part1(filename *string) {
 				matches += 1
 			}
 		}
-		fmt.Println(id, matches)
 	}
 
 	fmt.Println(total)
